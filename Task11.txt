@@ -1,0 +1,8 @@
+a = int(input("Введите число: "))
+fibonacci = [0, 1]
+while fibonacci[-1] < a:
+    fibonacci.append(fibonacci[-1] + fibonacci[-2])
+if fibonacci[-1] == a:
+    print("Число", a, "является", len(fibonacci) - 1, "по счету числом Фибоначчи")
+else:
+    print(-1)
